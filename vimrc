@@ -178,6 +178,8 @@ set noswapfile
 
 set fileformats=unix,dos,mac
 
+set cursorline
+
 if exists('$SHELL')
     set shell=$SHELL
 else
