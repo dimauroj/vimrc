@@ -318,6 +318,22 @@ let g:NERDTreeShowBookmarks=1
 let g:nerdtree_tabs_focus_on_files=1
 let g:NERDTreeMapOpenInTabSilent = '<RightMouse>'
 let g:NERDTreeWinSize = 25
+let NERDTreeStatusLine = -1        " do not use the default status line
+let NERDTreeDirArrows          = 1 " display fancy arrows instead of ASCII
+let NERDTreeMinimalUI          = 0 " I don't like the minimal UI, nerdtree!
+let NERDTreeShowFiles          = 1 " show files as well as dirs
+let NERDTreeShowHidden         = 1 " show hidden files, too.
+let NERDTreeShowBookmarks      = 1 " oh, and obvously, the bookmarks, too.
+let NERDTreeCaseSensitiveSort  = 1 " sorting of files should be case sensitive
+let NERDTreeRespectWildIgnore  = 1 " ignore files ignored by `wildignore`
+let NERDTreeChDirMode          = 2 " change CWD when tree root is changed
+let NERDTreeMouseMode          = 2 " use single click to fold/unfold dirs
+let NERDTreeQuitOnOpen         = 0 " do not quit on opening a file from tree
+let NERDTreeAutoDeleteBuffer   = 1 " delete buffer when deleting the file
+let NERDTreeHighlightCursorline= 1 " highlight the current line in tree
+let NERDTreeBookmarksFile      = expand("~/.vim") . "/tmp/bookmarks"
+let g:nerdtree_tabs_open_on_gui_startup=0
+let g:nerdtree_tabs_open_on_console_startup=0
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite
 nnoremap <leader>nf :NERDTreeFind<CR>
 nnoremap <leader>n :NERDTreeToggle<CR>
