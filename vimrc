@@ -84,6 +84,7 @@ Plug 'honza/vim-snippets'
 
 "" Color
 Plug 'sickill/vim-monokai'
+Plug 'flazz/vim-colorschemes'
 
 "*****************************************************************************
 "" Custom bundles
@@ -219,12 +220,13 @@ set ruler
 set number
 
 let no_buffers_menu=1
-if !exists('g:not_finish_vimplug')
-  colorscheme monokai
-endif
 
 set mousemodel=popup
 set t_Co=256
+set background=dark
+colorscheme monokai
+highlight Normal ctermbg=NONE
+highlight nonText ctermbg=NONE
 set guioptions=egmrti
 set gfn=Monospace\ 10
 
@@ -422,7 +424,7 @@ nnoremap <leader>sc :CloseSession<CR>
 let g:yankstack_map_keys = 0           " we will remap keys
 
 " --> provide mapping to cycle through previous pastes
-nmap <leader>pc <Plug>yankstack_substitute_older_paste
+nmap <leader>p <Plug>yankstack_substitute_older_paste
 
 " --> provide mapping to view all clipboard entries
 nnoremap <leader>ys :Yanks<CR>
