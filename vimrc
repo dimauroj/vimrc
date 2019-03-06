@@ -35,6 +35,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
@@ -160,6 +161,7 @@ set fileencodings=utf-8
 set bomb
 set binary
 set ttyfast
+set cursorline
 
 "" Fix backspace indent
 set backspace=indent,eol,start
@@ -324,6 +326,7 @@ let NERDTreeMinimalUI          = 0 " I don't like the minimal UI, nerdtree!
 let NERDTreeShowFiles          = 1 " show files as well as dirs
 let NERDTreeShowHidden         = 1 " show hidden files, too.
 let NERDTreeShowBookmarks      = 1 " oh, and obvously, the bookmarks, too.
+let NERDTreeShowHidden         = 1 " shoe hidden files
 let NERDTreeCaseSensitiveSort  = 1 " sorting of files should be case sensitive
 let NERDTreeRespectWildIgnore  = 1 " ignore files ignored by `wildignore`
 let NERDTreeChDirMode          = 2 " change CWD when tree root is changed
